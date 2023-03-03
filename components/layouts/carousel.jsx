@@ -60,23 +60,20 @@ export default function HomeCarouselComponent() {
                                 return <SwiperSlide key={key}>
 
 
-
-                                    <div className="absolute inset-0">
+                                    <div className="absolute inset-0 opacity-90">
                                         <img
                                             className="h-full w-full object-cover object-center"
                                             src={carousel.url}
                                             alt=""
                                         />
-                                        <div className="absolute inset-0 bg-brown opacity-60 mix-blend-multiply" aria-hidden="true" />
+                                        <div className="absolute inset-0 bg-primary opacity-20 mix-blend-multiply" aria-hidden="true" />
                                     </div>
-                                   
+                                    <div className="relative  mx-auto max-w-7xl py-16 px-6 sm:py-56 lg:px-8 text-center">
+                                        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-2xl lg:text-6xl">{carousel.title}</h1>
+                                        <p className="text-sm tracking-tight text-white sm:text-xl lg:text-2xl">{carousel.description}
+                                        </p>
+                                    </div>
 
-                                        <div className="relative mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 text-center">
-                                            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">{carousel.title}</h1>
-                                            <p className="text-sm tracking-tight text-white sm:text-xl lg:text-2xl">{carousel.description}
-                                            </p>
-                                        </div>
-                                    
                                 </SwiperSlide>
                             })
                         }
