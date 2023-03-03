@@ -108,7 +108,8 @@ function HomePage(props) {
         <div>
             {/* Hero */}
             <div className="flex flex-col bg-green-800 border-b border-gray-200 lg:border-0">
-                <nav aria-label="Offers" className="order-first lg:order-first">
+               <div className="">
+                <nav aria-label="Offers" className="">
                     <div className="mx-auto max-w-7xl  lg:px-8">
                         <ul
                             role="list"
@@ -128,12 +129,11 @@ function HomePage(props) {
                         </ul>
                     </div>
                 </nav>
-                {/* Trending products */}
                 <section aria-labelledby="trending-heading" className="bg-white">
-                    {/* <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:py-32 lg:px-8"> */}
                     <HomeCarouselComponent />
-                    {/* </div> */}
+                  
                 </section>
+               </div>
                 <div className="relative">
                     <div aria-hidden="true" className="absolute hidden h-full w-1/2 bg-gray-100 lg:block" />
                     <div className="relative bg-gray-100 lg:bg-transparent">

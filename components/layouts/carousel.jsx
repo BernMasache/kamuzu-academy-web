@@ -17,19 +17,19 @@ export default function HomeCarouselComponent() {
 
         {
             url: "./assets/images/carousel/b1.jpg",
-            title: "This is what WE DO",
-            description: " three Sharp Valley has interests in real estate development, investing brokerage, sales and marketing, hotel collection and property management."
+            title: "Vision and Mission ",
+            description: " Kamuzu Academy is a selective, co-educational boarding school for pupils in the 11 to 18 age range. It occupies a large, purpose-built campus close to the village of Mtunthama, 150 km from Lilongwe City. "
         },
         {
             url: "./assets/images/carousel/b2.jpg",
-            title: "WHAT WE DO",
-            description: "Sharp Valley has interests in real estate development, investing brokerage, sales and marketing, hotel collection and property management."
+            title: "Our Curriculum",
+            description: "The Academy offers courses leading to the IGCSE examinations of the University of Cambridge and other UK examining bodies at the end of Form 5, and to GCE AS and A levels"
         },
 
         {
             url: "./assets/images/carousel/b3.jpg",
-            title: "This is what WE DO",
-            description: " three Sharp Valley has interests in real estate development, investing brokerage, sales and marketing, hotel collection and property management."
+            title: "Team of Excellency",
+            description: " ALL WORK AND NO PLAY MAKES JACK A DULL BOY, Kamuzu Academy encourage creativity."
         },
     ]
     return (
@@ -68,8 +68,9 @@ export default function HomeCarouselComponent() {
                                         />
                                         <div className="absolute inset-0 bg-primary opacity-20 mix-blend-multiply" aria-hidden="true" />
                                     </div>
-                                    <div className="relative  mx-auto max-w-7xl py-16 px-6 sm:py-56 lg:px-8 text-center">
-                                        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-2xl lg:text-6xl">{carousel.title}</h1>
+                                    <div className="relative  mx-auto max-w-7xl py-32 px-6 sm:py-56 lg:px-8 text-center">
+                                        <div className="mb-32"></div>
+                                        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-2xl lg:text-6xl shadow-sm">{carousel.title}</h1>
                                         <p className="text-sm tracking-tight text-white sm:text-xl lg:text-2xl">{carousel.description}
                                         </p>
                                     </div>
